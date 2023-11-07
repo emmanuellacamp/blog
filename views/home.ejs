@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="hero-section">
+        <div class="hero-container">
+          <h1>Hooked on Yarn:A Journey Through Crochet Creations</h1>
+          <p>Welcome to "Hooked on Yarn" – a cozy corner of the internet dedicated to the art of crocheting. Here, we'll explore the wonderful world of yarn, hooks, and creativity. Whether you're a seasoned crocheter or a complete beginner, there's something here for everyone. Join me as we embark on a journey through the stitches, patterns, and projects that make crocheting a truly special craft</p>  
+        </div>
+    </section>
+    <section id="post-section">
+        <%- include('post.ejs', { featuredPost: featuredPost }) %>
+    </section>
+</body>
