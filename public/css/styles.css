@@ -1,0 +1,134 @@
+html{
+    padding: 0;
+}
+body{
+    /* background-color: #FFFBF5; */
+    height: 100%;
+    /* border-width: 2px;
+    border-color: black;
+    border-style: solid; */
+    margin: 0;
+    font-family: sans-serif;
+}
+
+main{
+    /* padding: 2rem; */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #FEEAFA; */
+    /* background-color: white; */
+    /* background-color: #CBC0D3; */
+    padding: 0  1rem 0 1rem;
+    margin: 0;
+}
+
+.logo{
+    /* align-items: center; */
+    /* filter: invert(100%); */
+
+    gap: 1rem;
+    max-width: 200px;
+    margin: 0;
+    /* width: 100;
+    height: 100px; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+header h3{
+    text-wrap: wrap;
+    /* color: #DEE2FF; */
+    /* color: #717987; */
+    color: #EFD3D7;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
+.nav-bar{
+    
+    justify-content: center;
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.nav-bar a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #EFD3D7;
+    font-size: 16px; /* Set the font size */
+    display: block;
+}
+
+.nav-bar a:hover{
+    color: #CBC0D3;
+}
+
+.hero-container{
+    position: relative; /* Set the position to relative */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+    margin: 0;
+    background-image: url("/images/oscar-helgstrand-F68sBbY7p3I-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(1px); */
+
+}
+
+.hero-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 210, 222, 0.21);
+    /* background-color: rgba(242, 210, 222, 0.425); */
+    /* background-color: rgba(210, 214, 242, 0.425); */
+    /* background-color: rgba(0, 0, 0, 0.456); */
+    filter: blur(52px); 
+}
+
+
+
+.hero-container h1{
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index: 1;
+    color: white;
+    font-family:  'Trebuchet MS', cursive;
+}
+
+
+.hero-container p {
+    max-width: 400px;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    z-index: 1;
+    color: white;
+    /* text-shadow: 2px 2px #717987; */
+}
+
+.hero-container .highlight{
+    color: #8E9AAF;
+
+    /* text-shadow: 2px 2px #717987; */
+
+}
