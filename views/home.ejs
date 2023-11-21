@@ -1,7 +1,7 @@
 <%- include("partials/header"); -%>
  </head>
 <body>
-    <main>
+
         <section id="hero-section">
             <div class="hero-container">
                 <h1>A Journey Through Crochet Creations</h1>
@@ -9,10 +9,22 @@
                 
             </div>
         </section>
-        <section id="post-section">
-            <%- include('post.ejs') %>
+        <section id="post-container">
+            <%- include('featuredpost.ejs') %>
+            <div class="post-text">
+                <%posts.forEach((post)=>{ %>
+                    <h3><%=(post.title)%></h3>
+                   <p>
+                    <%=post.content.substring(0, 100) + " ..."%>
+                    <a href="/posts/<%=post.title%>">
+                        Read More</a>
+                </p> 
+                <%})%>
+
+            </div>
+            
         </section>        
-    </main>
+
 
 </body>
-<!-- /* color: #FFFBF5; */ -->
+<%- include("partials/footer"); -%>
